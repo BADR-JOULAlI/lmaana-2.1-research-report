@@ -29,6 +29,15 @@ le même niveau sur Lmaana clean, avec une variation WER de **+0,0305 point**.
 Il s'agit d'une amélioration incrémentale et équilibrée, pas d'un gain
 important sur toutes les métriques.
 
+## Benchmark et positionnement
+
+![Benchmark de Lmaana 2.1](benchmark_models.png)
+
+La comparaison numérique concerne uniquement Lmaana V5 et Lmaana 2.1, évalués
+sur exactement le même test Dataset13. OmniASR, Whisper et SeamlessM4T sont
+présentés pour situer leur architecture et leur périmètre. Ils ne sont pas
+classés en précision, car ils n'ont pas encore été évalués sur le même protocole.
+
 ## Contenu du dossier
 
 ### `01_data_audit.ipynb`
