@@ -29,14 +29,27 @@ le même niveau sur Lmaana clean, avec une variation WER de **+0,0305 point**.
 Il s'agit d'une amélioration incrémentale et équilibrée, pas d'un gain
 important sur toutes les métriques.
 
-## Benchmark et positionnement
+## Scores WER/CER publiés pour le Darija
 
-![Benchmark de Lmaana 2.1](benchmark_models.png)
+![Comparaison des scores WER et CER publiés](darija_asr_reported_scores.png)
 
-La comparaison numérique concerne uniquement Lmaana V5 et Lmaana 2.1, évalués
-sur exactement le même test Dataset13. OmniASR, Whisper et SeamlessM4T sont
-présentés pour situer leur architecture et leur périmètre. Ils ne sont pas
-classés en précision, car ils n'ont pas encore été évalués sur le même protocole.
+La figure rassemble les résultats publiés de modèles Darija connus et les
+expériences MoulSot/Lmaana. Chaque ligne indique son propre jeu de test.
+Il ne s'agit pas d'un classement scientifique : les données, les conventions
+d'écriture et la normalisation ne sont pas identiques.
+
+Sources publiques principales :
+
+- [SpeechBrain DVoice Darija](https://huggingface.co/speechbrain/asr-wav2vec2-dvoice-darija)
+- [Wav2Vec2 Darija Combined](https://huggingface.co/amineouaki/wav2vec2-darija-combined)
+- [HuBERT Darija Combined](https://huggingface.co/amineouaki/hubert-darija-combined)
+- [Whisper Small Darija Combined](https://huggingface.co/amineouaki/whisper-small-darija-combined)
+- [Whisper Large-v3 Turbo Darija](https://huggingface.co/anaszil/whisper-large-v3-turbo-darija)
+
+Le modèle [MoulSot v0.3](https://huggingface.co/atlasia/moulsot.v0.3)
+n'est pas inclus dans les barres, car sa card actuelle ne publie pas de valeurs
+WER et CER. Un véritable benchmark nécessitera d'évaluer tous les modèles sur
+le même split MoulSot gelé avec une normalisation commune.
 
 ## Contenu du dossier
 
